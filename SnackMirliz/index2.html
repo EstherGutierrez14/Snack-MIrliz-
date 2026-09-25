@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Descuentos | Snacks Mirliz</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#fff7f0;
+}
+header{
+    background:linear-gradient(90deg,#ff7b00,#ffb000);
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+header h1{
+    font-size:45px;
+}
+header p{
+    font-size:20px;
+    margin-top:10px;
+}
+.titulo{
+    text-align:center;
+    margin:40px 0;
+    color:#ff6b00;
+    font-size:35px;
+}
+.contenedor{
+    width:90%;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
+.card{
+    width:300px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0px 10px 20px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.descuento{
+    position:absolute;
+    background:red;
+    color:white;
+    padding:8px 15px;
+    border-radius:0 0 15px 0;
+    font-weight:bold;
+}
+
+.imagen{
+    position:relative;
+}
+
+.info{
+    padding:20px;
+    text-align:center;
+}
+
+.info h2{
+    color:#ff7b00;
+    margin-bottom:10px;
+}
+
+.precio{
+    font-size:28px;
+    color:#ff3c00;
+    font-weight:bold;
+}
+
+.anterior{
+    color:gray;
+    text-decoration:line-through;
+    font-size:18px;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    background:#ff8500;
+    color:white;
+    font-size:17px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#ff5500;
+}
+.banner{
+    margin:60px auto;
+    width:90%;
+    background:linear-gradient(90deg,#ff8800,#ffd54f);
+    color:white;
+    text-align:center;
+    padding:40px;
+    border-radius:20px;
+}
+.banner h2{
+    font-size:40px;
+}
+.banner p{
+    margin-top:10px;
+    font-size:20px;
+}
+footer{
+    margin-top:60px;
+    background:#ff7b00;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+@media(max-width:700px){
+header h1{
+font-size:35px;
+}
+.card{
+width:100%;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<h1>🔥 Snacks Mirliz 🔥</h1>
+<p>¡Aprovecha nuestras promociones y descuentos especiales!</p>
+</header>
+<h2 class="titulo">OFERTAS DEL MES</h2>
+<div class="contenedor">
+    <div class="card">
+        <div class="imagen">
+            <div class="descuento">-20%</div>
+            <img src="papas fritas.jpeg" alt="Papas">
+        </div>
+        <div class="info">
+            <h2>Papas Fritas</h2>
+            <p class="anterior">Bs. 15.00</p>
+            <p class="precio">Bs. 12.00</p>
+            <button>
+                <a href="https://wa.me/59168162252" class="btn1" target="_blank">
+                Comprar Ahora
+            </a>
+            </button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="imagen">
+            <div class="descuento">-30%</div>
+            <img src="pipocas de pollo.jpeg" alt="pipocas de pollo">
+        </div>
+        <div class="info">
+            <h2>pipocas de pollo</h2>
+            <p class="anterior">Bs. 20.00</p>
+            <p class="precio">Bs. 14.00</p>
+            <button>
+                <a href="https://wa.me/59168162252" class="btn1" target="_blank">
+                Comprar Ahora
+                </a>
+            </button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="imagen">
+            <div class="descuento">2x1</div>
+            <img src="hamburguesas.jpeg" alt="Hamburguesas">
+        </div>
+        <div class="info">
+            <h2>Hamburguesas</h2>
+            <p class="anterior">Bs. 25.00</p>
+            <p class="precio">Bs. 18.00</p>
+            <button>
+                <a href="https://wa.me/59168162252" class="btn1" target="_blank">
+                Comprar Ahora
+            </a>
+            </button>
+        </div>
+    </div>
+</div>
+<div class="banner">
+    <h2>🎉 ¡Descuento Especial!</h2>
+    <p>Todos los viernes obtén hasta un <b>40% de descuento</b> en productos seleccionados.</p>
+    <br>
+    <button>Ver Promociones</button>
+</div>
+<footer>
+    <h3>Snacks Mirliz © 2026</h3>
+    <p>¡El mejor sabor al mejor precio!</p>
+</footer>
+</body>
+</html>
